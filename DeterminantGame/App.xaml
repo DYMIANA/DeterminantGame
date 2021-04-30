@@ -1,0 +1,46 @@
+﻿<Application x:Class="DeterminantGame.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DeterminantGame"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Name="On" x:Key="SoundButtonOn" TargetType="{x:Type Button}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate x:Name="SoundButtonTemplate" TargetType="Button">
+                            <Grid>
+                                <Image x:Name="SoundButtonImage"
+                            Source="Ресурсы/вкл.png"
+                               Width="50" Height="50" />
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="SoundButtonImage" Property="Source" Value="Ресурсы/выкл.png" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        <Style x:Name="Off" x:Key="SoundButtonOff" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate x:Name="SoundButtonTemplate" TargetType="Button">
+                        <Grid>
+                            <Image x:Name="SoundButtonImage"
+                            Source="Ресурсы/выкл.png"
+                               Width="50" Height="50" />
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="SoundButtonImage" Property="Source" Value="Ресурсы/вкл.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>

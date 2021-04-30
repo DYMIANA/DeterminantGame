@@ -1,0 +1,53 @@
+﻿<Window x:Class="DeterminantGame.MainWindow"
+        WindowState="Maximized"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeterminantGame"
+        mc:Ignorable="d"
+        Title="Determinant Game" Height="900" Width="1600">
+    <Window.Background>
+        <ImageBrush ImageSource="Ресурсы/лес.jpg"/>
+    </Window.Background>
+    
+    <Grid x:Name="Mains">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" x:Name="Play" BorderBrush="Black" Cursor="Hand" Content="Play" FontSize="36" FontFamily="Serreria Sobria" Height="70" Click="Play_Click" Foreground="#FF1A4F0A">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEEE3D2" Offset="0"/>
+                    <GradientStop Color="#FFE78D48" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" x:Name="TwoGames" Background="#FFE78D48" BorderBrush="Black" Cursor="Hand" Content="Two-player game" FontSize="36" FontFamily="Serreria Sobria" Height="70" Foreground="#FF1C5D08" Click="TwoGames_Click"/>
+        <Button Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" x:Name="Records" Background="#FFE78D48" BorderBrush="Black" Cursor="Hand" Content="Records" FontSize="36" FontFamily="Serreria Sobria" Height="70" Foreground="#FFD7CA08" Click="Records_Click"/>
+        <Button Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" x:Name="Exit" Background="#FF812FB0" BorderBrush="Black" Cursor="Hand" Content="Exit" FontSize="36" FontFamily="Serreria Sobria" Height="70" Foreground="#FFCD7B1C" Click="Exit_Click_1" />
+        <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" x:Name="Reference" BorderBrush="Black" Cursor="Hand" Content="INFO" FontSize="36" FontFamily="Serreria Sobria" Height="70" Foreground="#FF074337" Click="Reference_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF812FB0" Offset="1"/>
+                    <GradientStop Color="#FFE78D48" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="voice" Click="NotVoice_Click" BorderBrush="{x:Null}" Style="{DynamicResource SoundButtonOn}" />
+    </Grid>
+</Window>

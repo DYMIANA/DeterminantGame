@@ -1,0 +1,144 @@
+﻿<Window x:Class="DeterminantGame.Names"
+         WindowState="Maximized"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeterminantGame"
+        mc:Ignorable="d"
+        Title="Names" Height="900" Width="1600" BorderBrush="#FFE8AE30">
+    <Window.Background>
+        <ImageBrush ImageSource="Ресурсы/имена.jpg"/>
+    </Window.Background>
+
+    <Grid x:Name="game">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+
+        </Grid.ColumnDefinitions>
+        <TextBlock  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" x:Name="Pozitive" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FFC3286B" VerticalAlignment="Center" Text="Положительный" TextAlignment="Center" />
+        <TextBlock  Grid.Row="1" Grid.Column="11" Grid.ColumnSpan="4" x:Name="Negative" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF0828AE" VerticalAlignment="Center" TextAlignment="Center" Text="Отрицательный" />
+        <TextBox  Grid.Row="2" Grid.Column="11" Grid.ColumnSpan="4" x:Name="NegativeName" FontSize="36" FontFamily="Serreria Sobria" FontStyle="Italic" TextAlignment="Center" VerticalAlignment="Center" Foreground="#FF21B4DD" >
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1B258C" Offset="0"/>
+                    <GradientStop Color="#FFF0BDB7" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" x:Name="PozitiveName" FontSize="36" FontFamily="Serreria Sobria" TextAlignment="Center" FontStyle="Italic" VerticalAlignment="Center" Foreground="#FFFEFED7">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDD60A0" Offset="0"/>
+                    <GradientStop Color="#FFEBE6C6" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button  Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="2" Grid.RowSpan="1" x:Name="next" FontSize="48" FontFamily="Serreria Sobria" FontWeight="Bold" Click="Next_Click" Content="GO" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF7F4400"/>
+        <Button Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a1" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB87FAB" Offset="0"/>
+                    <GradientStop Color="#FF4D9CCC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="7" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a2" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB87FAB" Offset="0"/>
+                    <GradientStop Color="#FF4D9CCC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a3" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB87FAB" Offset="0"/>
+                    <GradientStop Color="#FF4D9CCC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a4" Background="#FF4D9CCC" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White"/>
+        <Button Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a5" Background="#FF4D9CCC" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White"/>
+        <Button Grid.Row="5" Grid.Column="9" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a6" Background="#FF4D9CCC" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White"/>
+        <Button Grid.Row="7" Grid.Column="5" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a7" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D9CCC" Offset="0"/>
+                    <GradientStop Color="#FF1C2255" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="7" Grid.Column="7" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a8" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D9CCC" Offset="0"/>
+                    <GradientStop Color="#FF1C2255" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="7" Grid.Column="9" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="a9" OpacityMask="Black" Click="A_Click1" FontSize="36" FontFamily="Serreria Sobria" Foreground="#FF15C211" BorderBrush="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D9CCC" Offset="0"/>
+                    <GradientStop Color="#FF1C2255" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="6" Grid.Column="1"   Content="1" x:Name="b1" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="6" Grid.Column="2"   Content="2" x:Name="b2" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="6" Grid.Column="3"   Content="3" x:Name="b3" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="7" Grid.Column="1"   Content="4" x:Name="b4" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="7" Grid.Column="2"   Content="5" x:Name="b5" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="7" Grid.Column="3"   Content="6" x:Name="b6" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="8" Grid.Column="1"   Content="7" x:Name="b7" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="8" Grid.Column="2"   Content="8" x:Name="b8" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="8" Grid.Column="3"   Content="9" x:Name="b9" Background="#FFBDBDBD" OpacityMask="Black" Click="B_Click1" FontSize="20" IsEnabled="False"/>
+
+        <Button Grid.Row="6" Grid.Column="12"   Content="1" x:Name="c1" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="6" Grid.Column="13"   Content="2" x:Name="c2" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="6" Grid.Column="14"   Content="3" x:Name="c3" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="7" Grid.Column="12"   Content="4" x:Name="c4" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="7" Grid.Column="13"   Content="5" x:Name="c5" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="7" Grid.Column="14"   Content="6" x:Name="c6" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="8" Grid.Column="12"   Content="7" x:Name="c7" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="8" Grid.Column="13"   Content="8" x:Name="c8" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <Button Grid.Row="8" Grid.Column="14"   Content="9" x:Name="c9" Background="#FFBDBDBD" OpacityMask="Black" Click="C_Click1" FontSize="20" IsEnabled="False"/>
+        <!--<Ellipse x:Name="Pozi" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Fill="#FFC3C1C1" Stroke="Black"/>
+        <Ellipse x:Name="Nega" Grid.Row="3" Grid.Column="13" Grid.ColumnSpan="2" Grid.RowSpan="2" Fill="#FFC3C1C1" Stroke="Black"/>-->
+        <TextBlock  Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="10" Grid.RowSpan="1" x:Name="names" Text="Введите имена" FontSize="48" TextAlignment="Center" Foreground="#FFF9D5C1"/>
+        <TextBlock  Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="10" Grid.RowSpan="1" x:Name="games" Text="игроков" FontSize="48" TextAlignment="Center" Foreground="#FFF9D5C1"/>
+        <Button  Grid.Row="1" Grid.Column="7" Grid.ColumnSpan="2" Grid.RowSpan="1" x:Name="DET" FontSize="48" FontFamily="Serreria Sobria" FontWeight="Bold" Click="DET_Click" Content="Det" Background="{x:Null}" Visibility="Hidden" Foreground="#FF894A00" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>
