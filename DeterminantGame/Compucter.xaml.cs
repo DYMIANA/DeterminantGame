@@ -11,6 +11,7 @@ namespace DeterminantGame
     /// Логика взаимодействия для Compucter.xaml
     /// </summary>
     public partial class Compucter : Window
+
     {
         public Compucter()
         {
